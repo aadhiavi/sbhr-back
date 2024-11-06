@@ -26,7 +26,7 @@ router.post("/add-connect", async (req, res) => {
             from: process.env.EMAIL_USER,
             to: email,
             subject: 'Data Entry Confirmation',
-            text: `Dear ${name},\n\nThank you for your submission. Here are the details we received:\n\nName: ${name}\nNumber: ${number}\nEmail: ${email}\nCity: ${city}\nMessage: ${message}\n\nWe appreciate your response.\n\nBest regards,\nSuhana Destinations & Travels`
+            text: `Dear ${name},\n\nThank you for your submission. Here are the details we received:\n\nName: ${name}\nNumber: ${number}\nEmail: ${email}\nCity: ${city}\nMessage: ${message}\n\nWe appreciate your response.\n\nBest regards,\nSuhana Beulah Hotels & Resorts`
         };
 
         transporter.sendMail(mailOptions, (error, info) => {
